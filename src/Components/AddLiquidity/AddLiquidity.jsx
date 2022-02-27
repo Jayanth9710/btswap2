@@ -36,27 +36,16 @@ function AddLiquidity() {
           <div className="icon__title">
             {/* <img className="inp__icon__1" src="bootomlogo.svg"></img> */}
             <span className="inp__title__1">Select a currency</span>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal" className="inp__choose__1">
+            <label for="tokens"></label>
+            <select name="tokens" id="tokens"  className="inp__choose__1">
               
               <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+              <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+            </select>
+            
           </div>
           <input className="inp__1" type="text" placeholder="0.00" />
         </div>
